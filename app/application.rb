@@ -1,7 +1,7 @@
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
-  @@cart
+  @@cart = [@@items]
 
   def call(env)
     resp = Rack::Response.new
@@ -18,7 +18,7 @@ class Application
       resp.write "Path Not Found"
     end
 
-    def @@cart.include?()
+    # def @@cart.include?()
 
     resp.finish
   end

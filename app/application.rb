@@ -35,7 +35,7 @@ class Application
           resp.write "We don't have that item!"
         end
         else
-          resp.write "Your cart is empty"
+          resp.write "Path Not Found"
         end
 
     resp.finish
